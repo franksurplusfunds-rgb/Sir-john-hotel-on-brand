@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-900 text-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #c9a84c44;
+    color: #c9a84c;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-wide;
+  }
+
+  .section-subtitle {
+    @apply font-sans text-xs tracking-[0.3em] uppercase text-gold-500 font-medium;
+  }
+
+  .gold-divider {
+    @apply block h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent my-6 w-32 mx-auto;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 border border-gold-500 text-gold-400 px-8 py-3 text-xs tracking-[0.25em] uppercase font-medium transition-all duration-500 hover:bg-gold-500 hover:text-dark-900 relative overflow-hidden;
+  }
+
+  .btn-gold-solid {
+    @apply inline-flex items-center gap-2 bg-gold-500 text-dark-900 px-8 py-3 text-xs tracking-[0.25em] uppercase font-medium transition-all duration-500 hover:bg-gold-400;
+  }
+}
+
+/* ── Hero Slideshow ─────────────────────────────────────── */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-slide-img {
+  position: absolute;
+  inset: -5%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+}
+
+.ken-b-1 { animation: ken-burns-1 8s ease-in-out forwards; }
+.ken-b-2 { animation: ken-burns-2 8s ease-in-out forwards; }
+.ken-b-3 { animation: ken-burns-3 8s ease-in-out forwards; }
+.ken-b-4 { animation: ken-burns-4 8s ease-in-out forwards; }
+.ken-b-5 { animation: ken-burns-5 8s ease-in-out forwards; }
+
+@keyframes ken-burns-1 {
+  0%   { transform: scale(1.0) translate(0%, 0%); }
+  100% { transform: scale(1.18) translate(-3%, -2%); }
+}
+@keyframes ken-burns-2 {
+  0%   { transform: scale(1.12) translate(3%, 2%); }
+  100% { transform: scale(1.0) translate(0%, 0%); }
+}
+@keyframes ken-burns-3 {
+  0%   { transform: scale(1.0) translate(-2%, 2%); }
+  100% { transform: scale(1.15) translate(2%, -1%); }
+}
+@keyframes ken-burns-4 {
+  0%   { transform: scale(1.15) translate(2%, -2%); }
+  100% { transform: scale(1.02) translate(-1%, 1%); }
+}
+@keyframes ken-burns-5 {
+  0%   { transform: scale(1.0) translate(1%, 1%); }
+  100% { transform: scale(1.2) translate(-1%, -1%); }
+}
+
+/* ── Slide progress bar ─────────────────────────────────── */
+.slide-progress {
+  position: relative;
+  width: 48px;
+  height: 1px;
+  background: rgba(255,255,255,0.25);
+  overflow: hidden;
+}
+
+.slide-progress-fill {
+  position: absolute;
+  inset: 0;
+  background: #c9a84c;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: none;
+}
+
+.slide-progress-fill.running {
+  animation: progressFill var(--slide-duration, 6000ms) linear forwards;
+}
+
+@keyframes progressFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ── Scroll-reveal ──────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ── Activity card hover ────────────────────────────────── */
+.activity-card:hover .activity-card-img {
+  transform: scale(1.08);
+}
+
+.activity-card:hover .activity-card-overlay {
+  opacity: 1;
+}
+
+/* ── Gold shimmer line ──────────────────────────────────── */
+.gold-line {
+  width: 0;
+  height: 1px;
+  background: #c9a84c;
+  transition: width 0.6s ease;
+}
+
+.gold-line.visible {
+  width: 64px;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0f0f0f; }
+::-webkit-scrollbar-thumb { background: #c9a84c44; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #c9a84c; }
