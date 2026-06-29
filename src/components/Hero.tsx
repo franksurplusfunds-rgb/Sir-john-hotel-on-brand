@@ -3,33 +3,33 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const SLIDES = [
   {
-    url: 'https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    heading: 'World-Class Facilities',
-    sub: 'Your Premier Sports & Recreational Destination',
+    url: 'https://images.pexels.com/photos/38301911/pexels-photo-38301911.png?auto=compress&cs=tinysrgb&w=1920',
+    heading: 'Family Fun & Outdoor Adventures',
+    sub: 'From merry go rounds to movie nights in nature, we have it all.',
     ken: 'ken-b-1',
   },
   {
-    url: 'https://images.pexels.com/photos/1553957/pexels-photo-1553957.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    heading: 'Excellence in Sport',
-    sub: 'Train. Compete. Triumph.',
+    url: 'https://images.pexels.com/photos/7551221/pexels-photo-7551221.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    heading: 'Team building & Corporate Retreats',
+    sub: 'Train. Collaborate. Connect.',
     ken: 'ken-b-2',
   },
   {
-    url: 'https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    heading: 'Crafted for Champions',
-    sub: 'Professional courts and arenas at your disposal',
+    url: 'https://images.pexels.com/photos/12377231/pexels-photo-12377231.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    heading: 'Kick off your adventure',
+    sub: 'Nature and vast greenspaces at your disposal. Explore the outdoors with us. ',
     ken: 'ken-b-3',
   },
   {
-    url: 'https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    url: 'https://images.pexels.com/photos/8556398/pexels-photo-8556398.jpeg?auto=compress&cs=tinysrgb&w=1920',
     heading: 'Relax & Rejuvenate',
     sub: 'Where performance meets tranquillity',
     ken: 'ken-b-4',
   },
   {
-    url: 'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    heading: 'Dine in Distinction',
-    sub: 'Curated culinary experiences after every session',
+    url: 'https://images.pexels.com/photos/8910439/pexels-photo-8910439.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    heading: 'Dine in nature',
+    sub: 'Inspired by Nature. Crafted by Our Chefs',
     ken: 'ken-b-5',
   },
 ];

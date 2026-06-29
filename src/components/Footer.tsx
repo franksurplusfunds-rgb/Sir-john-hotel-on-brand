@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter, Youtube, ArrowUp } from 'lucide-react';
 
 const FOOTER_LINKS = {
   Explore: ['About Us', 'Activities', 'Facilities', 'Membership', 'Events'],
-  Services: ['Gym & Fitness', 'Swimming Pool', 'Tennis Courts', 'Spa & Wellness', 'Restaurant'],
+  Services: ['Swimming Pool', 'Volley ball', 'Play Ground', 'Restaurant'],
   Support: ['FAQs', 'Book a Facility', 'Corporate Packages', 'Contact Us', 'Privacy Policy'],
 };
 
@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-white/40 font-sans font-light text-sm leading-relaxed mb-8 max-w-xs">
-              A world-class destination for sport, wellness, and recreation. Built for champions.
+              A perfect destination for sport, wellness, and relaxation . Built for champions.
               Open to everyone.
             </p>
             {/* Socials */}

@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { Award, Shield, Users, Zap } from 'lucide-react';
+import { Award, Shield, Users, Trees } from 'lucide-react';
 
 const PILLARS = [
-  { icon: Award,   label: 'Excellence',    desc: 'World-class standards in every court, pool, and facility we operate.' },
+  { icon: Award,   label: 'Excellence',    desc: 'We are commited to providing high qulaity service to our customers how ever we can.' },
   { icon: Shield,  label: 'Safety',        desc: 'Certified equipment, trained staff, and rigorous safety protocols.' },
   { icon: Users,   label: 'Community',     desc: 'A vibrant hub where families, teams, and individuals thrive together.' },
-  { icon: Zap,     label: 'Performance',   desc: 'Cutting-edge training environments designed to push your personal best.' },
+  { icon: Trees,    label: 'Serenity',     desc: 'A peaceful retreat for relaxation and rejuvenation.' },
 ];
 
 function useReveal<T extends HTMLElement>() {
@@ -49,7 +49,7 @@ export default function About() {
           <div ref={leftRef} className="reveal-left relative">
             <div className="relative overflow-hidden aspect-[4/5] lg:aspect-[3/4]">
               <img
-                src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=900"
+                src="https://images.pexels.com/photos/38302159/pexels-photo-38302159.jpeg?auto=compress&cs=tinysrgb&w=900"
                 alt="Sir John Sports Centre facilities"
                 className="w-full h-full object-cover transition-transform duration-[1200ms] hover:scale-105"
               />
@@ -58,7 +58,7 @@ export default function About() {
               <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold-500" />
             </div>
             {/* Floating stat card */}
-            <div className="absolute -bottom-6 -right-4 md:-right-10 bg-dark-700 border border-gold-500/20 px-8 py-6 shadow-2xl">
+            <div className="absolute -bottom-6 -right-4 md:-right-10 bg-dark700 border border-gold-500/20 px-8 py-6 shadow-2xl">
               <p className="font-serif text-5xl font-light text-gold-400 leading-none">15+</p>
               <p className="text-[10px] tracking-[0.25em] uppercase text-white/50 font-sans mt-2">
                 Facilities<br />Available
@@ -69,28 +69,23 @@ export default function About() {
           {/* Text block */}
           <div ref={rightRef} className="reveal-right lg:pl-8">
             <h3 className="font-serif text-3xl md:text-4xl font-light text-white mb-6 leading-snug">
-              Where Champions Are<br />
-              <span className="text-gold-400">Built and Celebrated</span>
+              Join us <br />
+              <span className="text-gold-400">Outdoor Adventures</span>
             </h3>
             <p className="text-white/60 font-sans font-light leading-relaxed text-sm md:text-base mb-6">
-              Sir John Sports &amp; Recreational Centre stands as a premier destination for athletes,
-              families, and sports enthusiasts across the region. Designed with both competitive
-              performance and leisure in mind, our state-of-the-art complex offers everything from
-              Olympic-grade training facilities to serene relaxation spaces.
+             Nestled in the heart of Gachoka, Embu County, Sir John Resort is where nature, comfort, and 
+             adventure come together. Whether you're planning a family getaway, corporate retreat, or peaceful
+             escape, enjoy elegant accommodation, breathtaking scenery, and unforgettable experiences.
+
             </p>
-            <p className="text-white/60 font-sans font-light leading-relaxed text-sm md:text-base mb-10">
-              Whether you're a seasoned professional sharpening your edge, a family seeking active
-              weekend recreation, or a corporate team building shared victories — Sir John is your home.
-              Every corner of our facility is designed with meticulous attention to quality,
-              comfort, and inspiration.
-            </p>
+            
 
             {/* Stats row */}
             <div className="flex gap-10 border-t border-white/10 pt-8">
               {[
-                { val: '5,000+',  label: 'Members' },
-                { val: '20+',     label: 'Sports Offered' },
-                { val: '10 yrs',  label: 'Of Excellence' },
+                { val: '50+',  label: 'Acres' },
+                { val: '10+',     label: 'Activities' },
+                { val: '3 yrs',  label: 'Of Excellence' },
               ].map(s => (
                 <div key={s.label}>
                   <p className="font-serif text-3xl font-light text-gold-400">{s.val}</p>

@@ -20,14 +20,14 @@ export const ACTIVITIES: PageData[] = [
     description:
       'A refreshing swim in our clean, well-maintained pool set within a lush natural environment. Whether you\'re looking to cool off on a warm afternoon, squeeze in an early morning lap session, or simply float and decompress — our swimming experience is one of the most beloved at Sir John. The tranquil surroundings transform every dip into something more than exercise; it becomes a moment of genuine restoration.',
     heroImage: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=800',
+    cardImage: 'https://images.pexels.com/photos/33165854/pexels-photo-33165854.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Pool' },
-      { url: 'https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Morning Swim' },
-      { url: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Open Water' },
+      { url: 'https://images.pexels.com/photos/38301049/pexels-photo-38301049.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Pool' },
+      { url: 'https://images.pexels.com/photos/33165854/pexels-photo-33165854.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Morning Swim' },
+      { url: 'https://images.pexels.com/photos/38301049/pexels-photo-38301049.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Open Water' },
     ],
     highlights: [
-      'Well-maintained heated pool',
+      'Well maintained pool with natural surroundings',
       'Qualified lifeguards on duty at all times',
       'Swimming lessons available on request',
       'Open from early morning to evening',
@@ -43,14 +43,14 @@ export const ACTIVITIES: PageData[] = [
     description:
       'Disconnect from the noise of modern life and reconnect with what truly matters. Our camping experience places you right in the heart of nature — wake up to birdsong, breathe crisp morning air, and fall asleep beneath a canopy of stars. Sir John\'s camping sites are carefully chosen for their natural beauty and serenity, offering a genuine back-to-nature escape without sacrificing safety or comfort.',
     heroImage: 'https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=800',
+    cardImage: 'https://images.pexels.com/photos/28207258/pexels-photo-28207258.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campfire' },
+      { url: 'https://images.pexels.com/photos/10066114/pexels-photo-10066114.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campfire' },
       { url: 'https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Tent Setup' },
       { url: 'https://images.pexels.com/photos/699558/pexels-photo-699558.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Night Skies' },
     ],
     highlights: [
-      'Designated camping zones with fire pits',
+      'Designated camping zones with bonfires on request',
       'Tent hire available on-site',
       'Clean ablution and shower facilities nearby',
       'Secure perimeter with 24-hr security',
@@ -65,17 +65,18 @@ export const ACTIVITIES: PageData[] = [
     tagline: 'Forge Bonds. Build Champions.',
     description:
       'Our professionally facilitated team building programmes are designed to strengthen communication, trust, and collaboration among your group. Set in our expansive natural outdoor environment, these carefully crafted activities create shared experiences that carry real meaning — both in the moment and long after your team returns to the office. From high-energy outdoor challenges to reflective problem-solving exercises, every programme is tailored to your objectives.',
-    heroImage: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/7551757/pexels-photo-7551757.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/9487229/pexels-photo-9487229.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Group Activities' },
-      { url: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Team Sessions' },
-      { url: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Workshops' },
+      { url: 'https://images.pexels.com/photos/7551757/pexels-photo-7551757.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Group Activities' },
+      { url: 'https://images.pexels.com/photos/9487241/pexels-photo-9487241.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Team sessions' },
+      { url: 'https://images.pexels.com/photos/8837580/pexels-photo-8837580.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Workshops' },
     ],
     highlights: [
       'Certified and experienced facilitators',
       'Fully customised programmes per group',
-      'Groups of 10 to 200 participants',
+      'Groups of 10 to 100 participants',
+      ///Build out a page with package information: description ,pricing, 
       'Half-day, full-day & residential packages',
       'Includes meals, breaks & debrief sessions',
     ],
@@ -88,10 +89,10 @@ export const ACTIVITIES: PageData[] = [
     tagline: 'Every Step, a Discovery',
     description:
       'Lace up and explore the beautiful trails that wind through Sir John\'s grounds and the surrounding natural landscape. From gentle walks perfectly suited to families with young children, to more challenging routes for avid hikers seeking elevation and effort — our nature trails offer something for every pace. Guided walks include fascinating insights into local flora, fauna, and ecology.',
-    heroImage: 'https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/8905800/pexels-photo-8905800.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/8905800/pexels-photo-8905800.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/1578750/pexels-photo-1578750.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Forest Path' },
+      { url: 'https://images.pexels.com/photos/8905800/pexels-photo-8905800.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Forest Path' },
       { url: 'https://images.pexels.com/photos/704921/pexels-photo-704921.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Scenic View' },
       { url: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Wildlife Spotting' },
     ],
@@ -120,7 +121,6 @@ export const ACTIVITIES: PageData[] = [
     ],
     highlights: [
       'Expert astronomical guides',
-      'Telescope access for close-up viewing',
       'Best October through March season',
       'Evening sessions starting from 7:30pm',
       'Warm drinks & blankets provided',
@@ -131,6 +131,29 @@ export const ACTIVITIES: PageData[] = [
 
 export const FACILITIES: PageData[] = [
   {
+    slug: 'accommodation',
+    title: 'Accommodation',
+    category: 'facility',
+    tagline: 'Rest in Comfort After a Day Outdoors',
+    description:
+      'Choose from welcoming a suite of luxurious private cabins, unwind in style after your Sir John adventure in and around Sir John. Every option offers a peaceful retreat with warm bedding, thoughtfully curated interiors, and easy access to the site\'s amenities. Our accommodation is crafted to make your stay feel both restorative and memorable.',
+    heroImage: 'https://images.pexels.com/photos/38308102/pexels-photo-38308102.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/38308394/pexels-photo-38308394.png?auto=compress&cs=tinysrgb&w=700',
+    gallery: [
+      { url: 'https://images.pexels.com/photos/38313561/pexels-photo-38313561.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Cabin Lounge ' },
+      { url: 'https://images.pexels.com/photos/3634742/pexels-photo-3634742.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Bathroom' },
+      { url: 'https://images.pexels.com/photos/38308102/pexels-photo-38308102.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Bedroom Interior' },
+    ],
+    highlights: [
+      'Private rooms, cabins and luxury tents',
+      'Fresh linen and comfortable bedding',
+      'Easy access to shared amenities',
+      'Peaceful natural setting with privacy',
+      'Friendly staff available 24/7 for guest support',
+    ],
+    cta: 'View Accommodation Options',
+  },
+  {
     slug: 'camping-grounds',
     title: 'Camping Grounds',
     category: 'facility',
@@ -138,11 +161,11 @@ export const FACILITIES: PageData[] = [
     description:
       'Spacious, well-maintained camping grounds with clearly demarcated pitches, communal fire areas, and clean ablution blocks. Our grounds are set within a serene natural environment, carefully planned to preserve the tranquillity that makes Sir John special. Whether you arrive with a family, a group of friends, or a corporate team, there\'s space and comfort enough for everyone.',
     heroImage: 'https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&w=800',
+    cardImage: 'https://images.pexels.com/photos/38313707/pexels-photo-38313707.jpeg?auto=compress&cs=tinysrgb&w=700',
     gallery: [
-      { url: 'https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campsite' },
-      { url: 'https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campfire' },
-      { url: 'https://images.pexels.com/photos/776314/pexels-photo-776314.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Grounds' },
+      { url: 'https://images.pexels.com/photos/18386294/pexels-photo-18386294.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campsite' },
+      { url: 'https://images.pexels.com/photos/10066114/pexels-photo-10066114.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Campfire' },
+      { url: 'https://images.pexels.com/photos/28207258/pexels-photo-28207258.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Grounds' },
     ],
     highlights: [
       'Multiple pitch sizes for tents and groups',
@@ -160,12 +183,12 @@ export const FACILITIES: PageData[] = [
     tagline: 'Savour Every Moment',
     description:
       'Our open-air bar lounge and restaurant is the social heart of Sir John. Enjoy freshly prepared meals, chilled drinks, and great company in a relaxed setting that blurs the line between indoors and outdoors. From hearty morning breakfasts that set you up for a day of adventure, to sundowner cocktails that bookend a perfect evening — the restaurant at Sir John is a destination in itself.',
-    heroImage: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/37923406/pexels-photo-37923406.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/37923420/pexels-photo-37923420.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Bar Area' },
-      { url: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Restaurant' },
-      { url: 'https://images.pexels.com/photos/1484516/pexels-photo-1484516.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Dining' },
+      { url: 'https://images.pexels.com/photos/6530930/pexels-photo-6530930.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Bar Area' },
+      { url: 'https://images.pexels.com/photos/37923406/pexels-photo-37923406.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Restaurant' },
+      { url: 'https://images.pexels.com/photos/17541188/pexels-photo-17541188.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Dining' },
     ],
     highlights: [
       'Full breakfast, lunch and dinner menu',
@@ -183,10 +206,10 @@ export const FACILITIES: PageData[] = [
     tagline: 'Dive In, Switch Off',
     description:
       'Our well-maintained swimming pool is available to all guests throughout the day. Whether you\'re swimming laps, floating lazily, or splashing with the kids — the pool is your cooling sanctuary at the heart of the retreat. Set within a beautifully landscaped area, the poolside experience at Sir John is as much about the atmosphere as it is about the water.',
-    heroImage: 'https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/38301049/pexels-photo-38301049.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/38301911/pexels-photo-38301911.png?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Pool' },
+      { url: 'https://images.pexels.com/photos/32095954/pexels-photo-32095954.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Pool' },
       { url: 'https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Poolside' },
       { url: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Swim Sessions' },
     ],
@@ -214,7 +237,7 @@ export const FACILITIES: PageData[] = [
       { url: 'https://images.pexels.com/photos/4691551/pexels-photo-4691551.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Game Night' },
     ],
     highlights: [
-      '30+ board and card games available',
+      'Board and card games available',
       'Suitable for all ages and group sizes',
       'Comfortable indoor lounge setting',
       'Bookable for private group use',
@@ -222,6 +245,7 @@ export const FACILITIES: PageData[] = [
     ],
     cta: 'Book the Games Room',
   },
+  //data objects for the facilites page 
   {
     slug: 'pool-table',
     title: 'Pool Table',
@@ -229,10 +253,10 @@ export const FACILITIES: PageData[] = [
     tagline: 'Line It Up',
     description:
       'Challenge a friend or strike up a game with a fellow guest over our full-size billiards table. Housed in our indoor social lounge, the pool table is the perfect centrepiece for relaxed evening entertainment. Whether you play seriously or just enjoy a casual knock-about, it\'s a guaranteed crowd-pleaser — especially when paired with a cold drink from the bar.',
-    heroImage: 'https://images.pexels.com/photos/951531/pexels-photo-951531.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/951531/pexels-photo-951531.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/32095954/pexels-photo-32095954.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/32095954/pexels-photo-32095954.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/951531/pexels-photo-951531.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Billiards Table' },
+      { url: 'https://images.pexels.com/photos/32095954/pexels-photo-32095954.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Billiards Table' },
       { url: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Lounge Area' },
       { url: 'https://images.pexels.com/photos/776654/pexels-photo-776654.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Social Space' },
     ],
@@ -252,10 +276,10 @@ export const FACILITIES: PageData[] = [
     tagline: 'Fast. Fun. Addictive.',
     description:
       'Fast-paced and endlessly entertaining, our table tennis facilities are open to all guests. Whether you\'re a seasoned player with a killer serve or a complete beginner who can\'t stop laughing at every missed shot — a game of table tennis is one of the best ways to shake off the afternoon, get energised, and get everyone involved regardless of age or fitness level.',
-    heroImage: 'https://images.pexels.com/photos/2116469/pexels-photo-2116469.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/2116469/pexels-photo-2116469.jpeg?auto=compress&cs=tinysrgb&w=800',
+    heroImage: 'https://images.pexels.com/photos/18511482/pexels-photo-18511482.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/18511482/pexels-photo-18511482.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/2116469/pexels-photo-2116469.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Table Tennis' },
+      { url: 'https://images.pexels.com/photos/976873/pexels-photo-976873.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Table Tennis' },
       { url: 'https://images.pexels.com/photos/4463977/pexels-photo-4463977.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Game In Play' },
       { url: 'https://images.pexels.com/photos/776654/pexels-photo-776654.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Recreation Area' },
     ],
@@ -279,8 +303,8 @@ export const FACILITIES: PageData[] = [
     cardImage: 'https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
       { url: 'https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Match Day' },
-      { url: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Lounge' },
-      { url: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Game Crowd' },
+      { url: 'https://images.pexels.com/photos/6210505/pexels-photo-6210505.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'The Lounge' },
+      { url: 'https://images.pexels.com/photos/14856235/pexels-photo-14856235.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Game Crowd' },
     ],
     highlights: [
       'Large format projector screen',

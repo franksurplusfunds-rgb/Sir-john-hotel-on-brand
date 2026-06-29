@@ -74,7 +74,7 @@ export default function Facilities() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-14">
               <div className="max-w-xl">
-                <p className="section-subtitle text-gold-400 text-[10px] tracking-[0.3em] mb-3">Signature Facility</p>
+                <p className="section-subtitle text-gold-400 text-[10px] tracking-[0.3em] mb-3"> Cabins </p>
                 <h3 className="font-serif text-4xl md:text-5xl font-light text-white mb-3 group-hover:text-gold-300 transition-colors duration-400 leading-tight">
                   {hero.title}
                 </h3>

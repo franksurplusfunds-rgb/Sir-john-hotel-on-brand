@@ -21,7 +21,7 @@ function useReveal<T extends HTMLElement>() {
   }, []);
   return ref;
 }
-
+//expose port to wrap the function around the contact form and the contact information and define intrinsic logic
 export default function Contact() {
   const leftRef  = useReveal<HTMLDivElement>();
   const rightRef = useReveal<HTMLDivElement>();
@@ -42,6 +42,9 @@ export default function Contact() {
 
   const inputClass =
     'w-full bg-transparent border-b border-white/15 focus:border-gold-500 text-white placeholder:text-white/25 text-sm font-sans py-3 outline-none transition-colors duration-400 font-light';
+
+  const selectClass =
+    'w-full bg-dark-900 border-b border-white/15 focus:border-gold-500 text-white placeholder:text-white/25 text-sm font-sans py-3 outline-none transition-colors duration-400 font-light appearance-none cursor-pointer';
 
   return (
     <section id="contact" className="bg-dark-800 py-24 lg:py-36 overflow-hidden">
@@ -127,7 +130,7 @@ export default function Contact() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin size={28} className="text-gold-500 mx-auto mb-2" strokeWidth={1.5} />
-                  <p className="text-[10px] tracking-[0.25em] uppercase text-white/50 font-sans">Nairobi, Kenya</p>
+                  <p className="text-[10px] tracking-[0.25em] uppercase text-white/50 font-sans">Embu, Gachoka</p>
                 </div>
               </div>
             </div>
@@ -182,18 +185,14 @@ export default function Contact() {
                       name="interest"
                       value={form.interest}
                       onChange={handleChange}
-                      className={`${inputClass} appearance-none cursor-pointer`}
+                      className={selectClass}
                     >
-                      <option value="" disabled>Area of Interest</option>
-                      <option value="membership">Membership</option>
-                      <option value="gym">Gym & Fitness</option>
-                      <option value="pool">Swimming Pool</option>
-                      <option value="tennis">Tennis</option>
-                      <option value="football">Football</option>
-                      <option value="spa">Spa & Wellness</option>
-                      <option value="team">Team Building</option>
-                      <option value="event">Event Booking</option>
-                      <option value="other">Other</option>
+                      <option value="" disabled className="bg-dark-900 text-white">Area of Interest</option>
+                      <option value="pool" className="bg-dark-900 text-white">Swimming Pool</option>
+                      <option value="football" className="bg-dark-900 text-white">Football</option>
+                      <option value="team" className="bg-dark-900 text-white">Team Building</option>
+                      <option value="event" className="bg-dark-900 text-white">Event Booking</option>
+                      <option value="other" className="bg-dark-900 text-white">Other</option>
                     </select>
                   </div>
                 </div>

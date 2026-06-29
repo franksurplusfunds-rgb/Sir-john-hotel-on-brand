@@ -12,6 +12,16 @@
     overflow-x: hidden;
   }
 
+  select {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
+  select option {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+
   ::selection {
     background-color: #c9a84c44;
     color: #c9a84c;
