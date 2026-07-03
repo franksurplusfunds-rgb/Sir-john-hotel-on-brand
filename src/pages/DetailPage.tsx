@@ -155,6 +155,66 @@ export default function DetailPage({ slug }: { slug: string }) {
           </div>
         </div>
 
+        {/* Room options for Accommodation page */}
+        {page.slug === 'accommodation' && (
+          <div className="mt-24">
+            <div className="flex items-center gap-6 mb-10">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-gold-500 font-sans font-medium">Room Types</p>
+              <div className="h-px flex-1 bg-white/8" />
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Link
+                to="/standard-room/"
+                className="group relative overflow-hidden border border-white/8 hover:border-gold-500/30 transition-all duration-300"
+              >
+                <div className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                  <img
+                    src="/assets/images/standard-room.jpg"
+                    alt="Standard Room"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <h3 className="font-serif text-2xl font-light text-white group-hover:text-gold-400 transition-colors duration-300 mb-2">
+                      Standard Room
+                    </h3>
+                    <p className="text-white/60 font-sans text-sm font-light mb-4">
+                      Comfort Meets Value
+                    </p>
+                    <div className="inline-flex items-center gap-2 text-gold-400 text-[10px] tracking-[0.2em] uppercase font-sans font-medium">
+                      Explore <ChevronRight size={12} />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                to="/executive-room/"
+                className="group relative overflow-hidden border border-white/8 hover:border-gold-500/30 transition-all duration-300"
+              >
+                <div className="relative overflow-hidden" style={{ aspectRatio: '4/3' }}>
+                  <img
+                    src="/assets/images/executive-room.jpg"
+                    alt="Executive Room"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <h3 className="font-serif text-2xl font-light text-white group-hover:text-gold-400 transition-colors duration-300 mb-2">
+                      Executive Room
+                    </h3>
+                    <p className="text-white/60 font-sans text-sm font-light mb-4">
+                      Luxury & Sophistication
+                    </p>
+                    <div className="inline-flex items-center gap-2 text-gold-400 text-[10px] tracking-[0.2em] uppercase font-sans font-medium">
+                      Explore <ChevronRight size={12} />
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        )}
+
         {/* Gallery */}
         <div ref={galleryRef} className="reveal mt-20">
           <div className="flex items-center gap-6 mb-8">

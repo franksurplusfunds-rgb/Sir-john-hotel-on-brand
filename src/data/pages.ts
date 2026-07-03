@@ -317,8 +317,120 @@ export const FACILITIES: PageData[] = [
   },
 ];
 
+export interface AccommodationRoomData {
+  slug: string;
+  title: string;
+  tagline: string;
+  description: string;
+  heroImage: string;
+  mainImage: string;
+  boardOptions: {
+    name: string;
+    price: string;
+    description: string;
+  }[];
+  amenities: string[];
+  features: string[];
+  galleryImages: { url: string; label: string }[];
+}
+
+export const ACCOMMODATION_ROOMS: AccommodationRoomData[] = [
+  {
+    slug: 'standard-room',
+    title: 'Standard Room',
+    tagline: 'Comfort Meets Value',
+    description:
+      'Our Standard Rooms offer a welcoming retreat with all the essentials you need for a comfortable stay. Thoughtfully designed with comfort in mind, these rooms provide the perfect balance of functionality and relaxation. Each room features a queen bed, private ensuite bathroom, and access to all hotel amenities. Wake up refreshed and ready to enjoy everything Sir John has to offer.',
+    heroImage: '/assets/images/standard-room.jpg',
+    mainImage: '/assets/images/standard-room.jpg',
+    boardOptions: [
+      {
+        name: 'Fullboard',
+        price: 'From KES 8,500 per night',
+        description: 'Includes breakfast, lunch, and dinner. Experience the full culinary journey with three delicious meals daily, featuring local and international cuisine.'
+      },
+      {
+        name: 'Half Board',
+        price: 'From KES 6,500 per night',
+        description: 'Includes breakfast and dinner. Start your day right with our hearty breakfast, and unwind with a satisfying dinner in the evening.'
+      }
+    ],
+    amenities: [
+      'Free Wi-Fi',
+      'Free Bottled Water',
+      'Daily Housekeeping',
+      'Soft Towels'
+    ],
+    features: [
+      'Queen bed with premium bedding',
+      'Private ensuite bathroom with shower',
+      'Air conditioning and heating',
+      'Work desk and comfortable seating',
+      'Flat-screen TV',
+      'Direct dial telephone',
+      'Safe for valuables',
+      'Room service available'
+    ],
+    galleryImages: [
+      { url: '/assets/images/standard-room.jpg', label: 'Bedroom View' },
+      { url: '/assets/images/room-bathroom.jpg', label: 'Modern Bathroom' },
+      { url: '/assets/images/standard-room.jpg', label: 'Room Detail' }
+    ]
+  },
+  {
+    slug: 'executive-room',
+    title: 'Executive Room',
+    tagline: 'Luxury & Sophistication',
+    description:
+      'Elevate your stay with our Executive Rooms, designed for those who appreciate the finer things. These premium accommodations feature contemporary design, superior amenities, and stunning attention to detail. Enjoy the perfect blend of style, comfort, and convenience in a spacious setting. Each Executive Room offers exclusive perks and personalized service to ensure your visit is truly memorable.',
+    heroImage: '/assets/images/executive-room.jpg',
+    mainImage: '/assets/images/executive-room.jpg',
+    boardOptions: [
+      {
+        name: 'Fullboard',
+        price: 'From KES 12,500 per night',
+        description: 'Includes breakfast, lunch, and dinner. Premium meals served in our restaurant with exclusive access to the executive lounge for beverages and snacks throughout the day.'
+      },
+      {
+        name: 'Half Board',
+        price: 'From KES 10,000 per night',
+        description: 'Includes breakfast and dinner. Enjoy à la carte breakfast selections and multi-course dinners prepared by our culinary team, plus executive lounge access.'
+      }
+    ],
+    amenities: [
+      'Free Wi-Fi',
+      'Free Bottled Water',
+      'Daily Housekeeping',
+      'Soft Towels'
+    ],
+    features: [
+      'King bed with premium Egyptian cotton sheets',
+      'Spacious ensuite bathroom with rainfall shower and bathrobe',
+      'Separate living area with lounge seating',
+      'Climate control and smart thermostat',
+      'Large flat-screen smart TV',
+      'Executive work desk with ergonomic chair',
+      'Premium minibar stocked daily',
+      'Exclusive executive lounge access',
+      'Turndown service',
+      'Priority restaurant and room service',
+      'Electronic safe with multiple compartments',
+      'Luxury toiletries by premium brands'
+    ],
+    galleryImages: [
+      { url: '/assets/images/executive-room.jpg', label: 'Luxury Bedroom' },
+      { url: '/assets/images/room-bathroom.jpg', label: 'Spa-like Bathroom' },
+      { url: '/assets/images/executive-room.jpg', label: 'Living Area' }
+    ]
+  }
+];
+
 export const ALL_PAGES: PageData[] = [...ACTIVITIES, ...FACILITIES];
 
 export function getPageBySlug(slug: string): PageData | undefined {
   return ALL_PAGES.find(p => p.slug === slug);
+}
+
+export function getAccommodationRoomBySlug(slug: string): AccommodationRoomData | undefined {
+  return ACCOMMODATION_ROOMS.find(r => r.slug === slug);
 }
