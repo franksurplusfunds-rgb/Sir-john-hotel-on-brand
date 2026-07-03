@@ -254,6 +254,21 @@ export default function CheckoutPage({ eventSlug }: CheckoutPageProps) {
                 </div>
               </div>
 
+              {/* Promo Code */}
+              <div className="border border-white/8 p-8 bg-dark-800">
+                <h3 className="font-serif text-xl font-light text-white mb-6">Promo Code</h3>
+                <div>
+                  <label className="block text-white/70 font-sans text-sm font-light mb-2">
+                    Have a promo code? (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter promo code"
+                    className="w-full bg-dark-900 border border-white/8 text-white px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold-500 transition-colors"
+                  />
+                </div>
+              </div>
+
               {/* Payment Button */}
               <button
                 type="submit"
