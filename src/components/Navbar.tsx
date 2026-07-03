@@ -103,15 +103,9 @@ export default function Navbar() {
               </a>
               <button
                 onClick={() => handleNav('#activities')}
-                className="hidden md:inline-flex text-[10px] tracking-[0.2em] uppercase text-gold-400 hover:text-gold-300 transition-colors duration-300 font-medium"
+                className="hidden md:inline-flex btn-gold text-[10px] py-2.5 px-6"
               >
                 Events
-              </button>
-              <button
-                onClick={() => handleNav('#contact')}
-                className="hidden lg:inline-flex btn-gold text-[10px] py-2.5 px-6"
-              >
-                Reserve
               </button>
               <button
                 onClick={() => setMenuOpen(o => !o)}
@@ -143,14 +137,6 @@ export default function Navbar() {
                 </button>
               </li>
             ))}
-            <li className="pt-4">
-              <button
-                onClick={() => handleNav('#contact')}
-                className="btn-gold-solid w-full justify-center text-[10px]"
-              >
-                Reserve a Spot
-              </button>
-            </li>
           </ul>
         </div>
       </nav>
