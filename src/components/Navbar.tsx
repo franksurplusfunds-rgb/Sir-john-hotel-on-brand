@@ -102,10 +102,10 @@ export default function Navbar() {
                 <span>Book Now</span>
               </a>
               <button
-                onClick={() => handleNav('#contact')}
-                className="hidden lg:inline-flex btn-gold text-[10px] py-2.5 px-6"
+                onClick={() => handleNav('#activities')}
+                className="hidden md:inline-flex btn-gold text-[10px] py-2.5 px-6"
               >
-                Reserve
+                Events
               </button>
               <button
                 onClick={() => setMenuOpen(o => !o)}
@@ -137,14 +137,6 @@ export default function Navbar() {
                 </button>
               </li>
             ))}
-            <li className="pt-4">
-              <button
-                onClick={() => handleNav('#contact')}
-                className="btn-gold-solid w-full justify-center text-[10px]"
-              >
-                Reserve a Spot
-              </button>
-            </li>
           </ul>
         </div>
       </nav>
