@@ -434,3 +434,79 @@ export function getPageBySlug(slug: string): PageData | undefined {
 export function getAccommodationRoomBySlug(slug: string): AccommodationRoomData | undefined {
   return ACCOMMODATION_ROOMS.find(r => r.slug === slug);
 }
+
+export interface EventData {
+  id: string;
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  location: string;
+  image: string;
+  gallery: { url: string; label: string }[];
+  ticketCategories: {
+    name: string;
+    price: number;
+    currency: string;
+    description: string;
+  }[];
+  highlights: string[];
+  capacity: number;
+}
+
+export const EVENTS: EventData[] = [
+  {
+    id: 'evt-001',
+    slug: 'pool-party-outdoor-movie',
+    title: 'Pool Party with Outdoor Movie',
+    description:
+      'Join us for an unforgettable evening of fun, relaxation, and entertainment! Dive into our refreshing pool, enjoy delicious refreshments, and wind down with a spectacular outdoor movie screening under the stars. This is the perfect event to unwind with friends, family, or colleagues while enjoying the beautiful Sir John atmosphere.',
+    date: '2024-08-15',
+    time: '18:00 - 23:00',
+    location: 'Sir John Hotel - Main Pool Area',
+    image: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    gallery: [
+      { url: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Pool View' },
+      { url: 'https://images.pexels.com/photos/33165854/pexels-photo-33165854.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Evening Setup' },
+      { url: 'https://images.pexels.com/photos/38301049/pexels-photo-38301049.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Movie Night' }
+    ],
+    ticketCategories: [
+      {
+        name: 'Early Bird',
+        price: 500,
+        currency: 'KES',
+        description: 'Limited early bird offer - Save 50% off regular price'
+      },
+      {
+        name: 'Common',
+        price: 1000,
+        currency: 'KES',
+        description: 'Regular admission to the full event'
+      },
+      {
+        name: 'Group',
+        price: 800,
+        currency: 'KES',
+        description: 'Discounted price for groups of 5 or more (per person)'
+      }
+    ],
+    highlights: [
+      'Full access to the swimming pool',
+      'Complimentary refreshments and snacks',
+      'Outdoor movie screening on large screen',
+      'Comfortable seating and lounging areas',
+      'DJ entertainment throughout the evening',
+      'Family-friendly and pet-friendly atmosphere'
+    ],
+    capacity: 200
+  }
+];
+
+export function getEventBySlug(slug: string): EventData | undefined {
+  return EVENTS.find(e => e.slug === slug);
+}
+
+export function getEventById(id: string): EventData | undefined {
+  return EVENTS.find(e => e.id === id);
+}
