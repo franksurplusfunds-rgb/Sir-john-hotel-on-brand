@@ -56,16 +56,88 @@ export default function CheckoutPage({ eventSlug }: CheckoutPageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-dark-900 pt-24 pb-32">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
+    <div className="min-h-screen bg-dark-900 pb-32">
+      {/* Hero Section */}
+      <div className="relative w-full h-[500px] overflow-hidden">
+        <img
+          src={event.image}
+          alt={event.title}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/80" />
+        <div className="absolute inset-0 flex items-end justify-center pb-12">
+          <div className="text-center max-w-2xl px-4">
+            <h1 className="font-serif text-5xl font-light text-white mb-4">{event.title}</h1>
+            <p className="text-gold-400 font-sans text-sm uppercase tracking-[0.2em]">
+              {event.date} • {event.time}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 pt-12">
+        {/* Back Button */}
         <button
-          onClick={() => navigate('/events/')}
-          className="flex items-center gap-2 text-gold-500 hover:text-gold-400 font-sans text-sm uppercase tracking-wide mb-8 transition-colors"
+          onClick={() => navigate('/')}
+          className="flex items-center gap-2 text-gold-500 hover:text-gold-400 font-sans text-sm uppercase tracking-wide mb-12 transition-colors"
         >
           <ArrowLeft size={16} />
-          Back to Events
+          Back to Home
         </button>
+
+        {/* Event Poster & Description Section */}
+        <div className="mb-16 grid md:grid-cols-3 gap-8 items-start">
+          {/* Event Poster */}
+          <div className="md:col-span-1">
+            <div className="border border-white/8 overflow-hidden bg-dark-800">
+              <img
+                src={event.image}
+                alt={event.title}
+                className="w-full h-[400px] object-cover"
+              />
+              <div className="p-6 bg-dark-800">
+                <p className="text-gold-400 font-sans text-[10px] uppercase tracking-[0.2em] font-medium mb-2">
+                  Ticketed Event
+                </p>
+                <h3 className="font-serif text-lg font-light text-white mb-2">{event.title}</h3>
+                <p className="text-white/60 font-sans text-xs mb-4">{event.location}</p>
+                <div className="space-y-2">
+                  <p className="text-white/70 font-sans text-sm">
+                    <span className="text-gold-400 font-medium">Date:</span> {event.date}
+                  </p>
+                  <p className="text-white/70 font-sans text-sm">
+                    <span className="text-gold-400 font-medium">Time:</span> {event.time}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Event Description */}
+          <div className="md:col-span-2">
+            <div className="border border-white/8 p-8 bg-dark-800">
+              <h2 className="font-serif text-3xl font-light text-white mb-6">About This Event</h2>
+              <p className="text-white/70 font-sans text-base leading-relaxed mb-8">
+                {event.description}
+              </p>
+
+              {/* Highlights */}
+              {event.highlights.length > 0 && (
+                <div>
+                  <h3 className="font-serif text-xl font-light text-white mb-4">What's Included</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {event.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-gold-500 rounded-full mt-2 flex-shrink-0" />
+                        <p className="text-white/70 font-sans text-sm">{highlight}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
 
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Main Checkout Form */}
