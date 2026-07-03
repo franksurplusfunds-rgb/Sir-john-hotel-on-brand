@@ -102,6 +102,12 @@ export default function Navbar() {
                 <span>Book Now</span>
               </a>
               <button
+                onClick={() => handleNav('#activities')}
+                className="hidden md:inline-flex text-[10px] tracking-[0.2em] uppercase text-gold-400 hover:text-gold-300 transition-colors duration-300 font-medium"
+              >
+                Events
+              </button>
+              <button
                 onClick={() => handleNav('#contact')}
                 className="hidden lg:inline-flex btn-gold text-[10px] py-2.5 px-6"
               >

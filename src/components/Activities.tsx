@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { Link } from '../router';
-import { ACTIVITIES } from '../data/pages';
+import { ArrowRight, Ticket } from 'lucide-react';
+import { Link, useRouter } from '../router';
+import { ACTIVITIES, EVENTS } from '../data/pages';
 
 function RevealCard({ children, delay }: { children: React.ReactNode; delay: number }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -100,6 +100,29 @@ export default function Activities() {
           ))}
         </div>
 
+        {/* Events Section */}
+        <div className="mt-32 pt-24 border-t border-white/8">
+          <div ref={headerRef} className="reveal text-center mb-16">
+            <span className="section-subtitle">Upcoming Ticketed</span>
+            <div className="gold-divider" />
+            <h2 className="section-title text-white mt-4">
+              Special <em className="text-gold-400 not-italic">Events</em>
+            </h2>
+            <p className="mt-6 text-white/50 font-sans font-light max-w-2xl mx-auto text-sm leading-relaxed">
+              Join us for exclusive events featuring entertainment, dining, and unforgettable moments at Sir John.
+            </p>
+          </div>
+
+          {/* Events Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
+            {EVENTS.map((event, i) => (
+              <RevealCard key={event.id} delay={i * 80}>
+                <EventCard event={event} />
+              </RevealCard>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );
@@ -136,5 +159,54 @@ function ActivityCard({ activity }: { activity: (typeof ACTIVITIES)[0] }) {
         </span>
       </div>
     </Link>
+  );
+}
+
+function EventCard({ event }: { event: (typeof EVENTS)[0] }) {
+  const { navigate } = useRouter();
+
+  const handleBuyTicket = () => {
+    navigate(`/checkout/${event.slug}`);
+  };
+
+  return (
+    <div className="activity-card group relative overflow-hidden block h-72 md:h-80">
+      <img
+        src={event.image}
+        alt={event.title}
+        className="activity-card-img absolute inset-0 w-full h-full object-cover transition-transform duration-700"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent" />
+
+      {/* Default: title at bottom */}
+      <div className="absolute inset-x-0 bottom-0 p-6">
+        <div className="flex items-center gap-2 mb-2">
+          <Ticket size={14} className="text-gold-400" strokeWidth={1.8} />
+          <span className="text-[8px] tracking-[0.2em] uppercase text-gold-400 font-sans font-medium">Event</span>
+        </div>
+        <h3 className="font-serif text-2xl font-light text-white mb-1.5 group-hover:text-gold-400 transition-colors duration-400">
+          {event.title}
+        </h3>
+        <div className="h-px bg-gold-500 w-8 group-hover:w-full transition-all duration-500" />
+      </div>
+
+      {/* Hover overlay */}
+      <div className="activity-card-overlay absolute inset-0 bg-dark-900/85 backdrop-blur-[2px] flex flex-col justify-between p-6 opacity-0 transition-opacity duration-400">
+        <div>
+          <p className="section-subtitle text-gold-500 text-[9px] tracking-[0.3em] mb-3 flex items-center gap-2">
+            <Ticket size={12} strokeWidth={2} /> Ticketed Event
+          </p>
+          <h3 className="font-serif text-2xl font-light text-gold-400 mb-2">{event.title}</h3>
+          <p className="text-white/60 font-sans text-sm leading-relaxed mb-3 line-clamp-2">{event.date} • {event.time}</p>
+          <p className="text-white/60 font-sans text-sm leading-relaxed line-clamp-2">{event.description.slice(0, 120)}…</p>
+        </div>
+        <button
+          onClick={handleBuyTicket}
+          className="inline-flex items-center gap-2 text-[10px] tracking-[0.25em] uppercase text-gold-500 font-medium font-sans hover:text-gold-300 transition-colors duration-300"
+        >
+          Buy Ticket <ArrowRight size={12} />
+        </button>
+      </div>
+    </div>
   );
 }

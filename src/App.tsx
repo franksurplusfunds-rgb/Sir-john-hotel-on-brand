@@ -2,7 +2,6 @@ import { Router, useRouter } from './router';
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
 import AccommodationRoomPage from './pages/AccommodationRoomPage';
-import EventsPage from './pages/EventsPage';
 import CheckoutPage from './pages/CheckoutPage';
 import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import { ALL_PAGES, ACCOMMODATION_ROOMS, getAccommodationRoomBySlug } from './data/pages';
@@ -15,11 +14,6 @@ function Routes() {
   // Parse dynamic routes
   const checkoutMatch = cleanPath.match(/^checkout\/(.+)$/);
   const confirmationMatch = cleanPath.match(/^order-confirmation\/(.+)$/);
-
-  // Events route
-  if (cleanPath === 'events') {
-    return <EventsPage />;
-  }
 
   // Checkout route
   if (checkoutMatch) {
