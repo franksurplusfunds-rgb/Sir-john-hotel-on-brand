@@ -99,7 +99,7 @@ export default function AccommodationRoomPage({ room }: { room: AccommodationRoo
         <img
           src={room.heroImage}
           alt={room.title}
-          className="absolute inset-0 w-full h-full object-cover object-center ken-b-1"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/35 to-dark-900" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
