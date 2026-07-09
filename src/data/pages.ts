@@ -1,4 +1,4 @@
-export interface PageData {
+  export interface PageData {
   slug: string;
   title: string;
   category: 'activity' | 'facility';
@@ -106,26 +106,26 @@ export const ACTIVITIES: PageData[] = [
     cta: 'Book a Nature Trail',
   },
   {
-    slug: 'star-gazing',
-    title: 'Star Gazing',
+ slug: 'playground-for-kids',
+    title: 'Playground for Kids',
     category: 'activity',
-    tagline: 'The Universe, Yours to Explore',
+    tagline: 'Fun, Safe, and Full of Adventure',
     description:
-      'Away from the haze and glow of city light pollution, Sir John\'s location offers a rare window to the African night sky. On clear evenings, our knowledgeable guides will lead you on a journey through the constellations, planets, and deep-sky objects visible above. Whether you\'re an astronomy enthusiast or simply someone who has never taken the time to look up — this experience is humbling, magical, and utterly unforgettable.',
-    heroImage: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1920',
-    cardImage: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=800',
+      'Our playground for kids is a cheerful space where little ones can run, climb, and play in a safe and welcoming environment. Designed with family fun in mind, it offers colorful equipment, soft play zones, and plenty of room for imagination and laughter. It is the perfect place for children to burn energy while parents relax and enjoy the surroundings.',
+    heroImage: 'https://images.pexels.com/photos/38484096/pexels-photo-38484096.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    cardImage: 'https://images.pexels.com/photos/38484096/pexels-photo-38484096.jpeg?auto=compress&cs=tinysrgb&w=800',
     gallery: [
-      { url: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Milky Way' },
-      { url: 'https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Night Sky' },
-      { url: 'https://images.pexels.com/photos/699558/pexels-photo-699558.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Under the Stars' },
+      { url: 'https://images.pexels.com/photos/38484343/pexels-photo-38484343.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Playground Fun' },
+      { url: 'https://images.pexels.com/photos/9265329/pexels-photo-9265329.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Perfect for Kids' },
+      { url: 'https://images.pexels.com/photos/6689070/pexels-photo-6689070.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Board Games' },
     ],
     highlights: [
-      'Expert astronomical guides',
-      'Best October through March season',
-      'Evening sessions starting from 7:30pm',
-      'Warm drinks & blankets provided',
+      'Safe and colorful play equipment',
+      'Shaded seating for parents',
+      'Open-air fun for all ages',
+      'Perfect for family afternoons',
     ],
-    cta: 'Book a Star Gazing Session',
+    cta: 'Enquire',
   },
 ];
 
