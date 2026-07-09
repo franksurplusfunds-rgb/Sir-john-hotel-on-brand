@@ -122,17 +122,14 @@ export default function Contact() {
 
             {/* Map placeholder */}
             <div className="relative h-52 overflow-hidden border border-white/8">
-              <img
-                src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Location"
-                className="w-full h-full object-cover opacity-40"
+             <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3989.5781824648298!2d37.5223282!3d-0.6286278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18263b0070b2a6d9%3A0xf05b100c7c983e60!2sSir%20John%20sports%20and%20Recreational%20Center!5e0!3m2!1sen!2ske!4v1783605987129!5m2!1sen!2ske"
+                title="Sir John sports and Recreational Center location"
+                className="w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin size={28} className="text-gold-500 mx-auto mb-2" strokeWidth={1.5} />
-                  <p className="text-[10px] tracking-[0.25em] uppercase text-white/50 font-sans">Embu, Gachoka</p>
-                </div>
-              </div>
             </div>
           </div>
 
