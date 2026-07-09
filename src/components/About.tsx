@@ -85,7 +85,7 @@ export default function About() {
               {[
                 { val: '50+',  label: 'Acres' },
                 { val: '10+',     label: 'Activities' },
-                { val: '3 yrs',  label: 'Of Excellence' },
+                { val: '5.0',  label: 'Stars' },
               ].map(s => (
                 <div key={s.label}>
                   <p className="font-serif text-3xl font-light text-gold-400">{s.val}</p>
