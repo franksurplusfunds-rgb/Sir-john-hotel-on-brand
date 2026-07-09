@@ -465,7 +465,7 @@ export const EVENTS: EventData[] = [
     date: '2024-08-15',
     time: '18:00 - 23:00',
     location: 'Sir John Hotel - Main Pool Area',
-    image: 'https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=1920',
+    image: 'https://images.pexels.com/photos/38494865/pexels-photo-38494865.png?auto=compress&cs=tinysrgb&w=1920',
     gallery: [
       { url: 'https://images.pexels.com/photos/33832435/pexels-photo-33832435.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Pool View' },
       { url: 'https://images.pexels.com/photos/33165854/pexels-photo-33165854.jpeg?auto=compress&cs=tinysrgb&w=700', label: 'Evening Setup' },
