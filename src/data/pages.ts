@@ -480,13 +480,13 @@ export const EVENTS: EventData[] = [
       },
       {
         name: 'Common',
-        price: 1000,
+        price: 650,
         currency: 'KES',
         description: 'Regular admission to the full event'
       },
       {
         name: 'Group',
-        price: 2500,
+        price: 400,
         currency: 'KES',
         description: 'Discounted price for groups of 5 or more (per person)'
       }
